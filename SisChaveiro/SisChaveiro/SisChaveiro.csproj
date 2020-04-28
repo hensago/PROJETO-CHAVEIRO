@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{690BEBFE-BE33-4E51-AA87-20F5E89BB573}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SisChaveiro</RootNamespace>
+    <AssemblyName>SisChaveiro</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlterarCliente1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarCliente1.Designer.cs">
+      <DependentUpon>AlterarCliente1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarCliente2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarCliente2.Designer.cs">
+      <DependentUpon>AlterarCliente2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarFornecedor1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarFornecedor1.Designer.cs">
+      <DependentUpon>AlterarFornecedor1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarFornecedor2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarFornecedor2.Designer.cs">
+      <DependentUpon>AlterarFornecedor2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarFuncionario1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarFuncionario1.Designer.cs">
+      <DependentUpon>AlterarFuncionario1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarFuncionario2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarFuncionario2.Designer.cs">
+      <DependentUpon>AlterarFuncionario2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarProduto2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarProduto2.Designer.cs">
+      <DependentUpon>AlterarProduto2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarProduto1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarProduto1.Designer.cs">
+      <DependentUpon>AlterarProduto1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarServico1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarServico1.Designer.cs">
+      <DependentUpon>AlterarServico1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarServico2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarServico2.Designer.cs">
+      <DependentUpon>AlterarServico2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarCliente.Designer.cs">
+      <DependentUpon>CadastrarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarFornecedor.Designer.cs">
+      <DependentUpon>CadastrarFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarFuncionario.Designer.cs">
+      <DependentUpon>CadastrarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarProduto.Designer.cs">
+      <DependentUpon>CadastrarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarServico.Designer.cs">
+      <DependentUpon>CadastrarServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConexaoBD.cs" />
+    <Compile Include="ConsultaCCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaCCliente.Designer.cs">
+      <DependentUpon>ConsultaCCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaCFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaCFornecedor.Designer.cs">
+      <DependentUpon>ConsultaCFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaCliente1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaCliente1.Designer.cs">
+      <DependentUpon>ConsultaCliente1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaFornecedor.Designer.cs">
+      <DependentUpon>ConsultaFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaFuncionario.Designer.cs">
+      <DependentUpon>ConsultaFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaPProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaPProduto.Designer.cs">
+      <DependentUpon>ConsultaPProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaProduto.Designer.cs">
+      <DependentUpon>ConsultaProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaPServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaPServico.Designer.cs">
+      <DependentUpon>ConsultaPServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaServico.Designer.cs">
+      <DependentUpon>ConsultaServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcluirCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirCliente.Designer.cs">
+      <DependentUpon>ExcluirCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcluirFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirFornecedor.Designer.cs">
+      <DependentUpon>ExcluirFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcluirFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirFuncionario.Designer.cs">
+      <DependentUpon>ExcluirFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcluirProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirProduto.Designer.cs">
+      <DependentUpon>ExcluirProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcluirServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirServico.Designer.cs">
+      <DependentUpon>ExcluirServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidoProduto.Designer.cs">
+      <DependentUpon>PedidoProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidoServico.Designer.cs">
+      <DependentUpon>PedidoServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaGerente2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaGerente2.Designer.cs">
+      <DependentUpon>TelaGerente2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaInicial.Designer.cs">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TelaGerente1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaGerente1.Designer.cs">
+      <DependentUpon>TelaGerente1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AlterarCliente1.resx">
+      <DependentUpon>AlterarCliente1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterarCliente2.resx">
+      <DependentUpon>AlterarCliente2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterarFornecedor1.resx">
+      <DependentUpon>AlterarFornecedor1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterarFornecedor2.resx">
+      <DependentUpon>AlterarFornecedor2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterarFuncionario1.resx">
+      <DependentUpon>AlterarFuncionario1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterarFuncionario2.resx">
+      <DependentUpon>AlterarFuncionario2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterarProduto2.resx">
+      <DependentUpon>AlterarProduto2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterarProduto1.resx">
+      <DependentUpon>AlterarProduto1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterarServico1.resx">
+      <DependentUpon>AlterarServico1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterarServico2.resx">
+      <DependentUpon>AlterarServico2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarCliente.resx">
+      <DependentUpon>CadastrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarFornecedor.resx">
+      <DependentUpon>CadastrarFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarFuncionario.resx">
+      <DependentUpon>CadastrarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarProduto.resx">
+      <DependentUpon>CadastrarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarServico.resx">
+      <DependentUpon>CadastrarServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaCCliente.resx">
+      <DependentUpon>ConsultaCCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaCFornecedor.resx">
+      <DependentUpon>ConsultaCFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaCliente1.resx">
+      <DependentUpon>ConsultaCliente1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaFornecedor.resx">
+      <DependentUpon>ConsultaFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaFuncionario.resx">
+      <DependentUpon>ConsultaFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaPProduto.resx">
+      <DependentUpon>ConsultaPProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaProduto.resx">
+      <DependentUpon>ConsultaProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaPServico.resx">
+      <DependentUpon>ConsultaPServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaServico.resx">
+      <DependentUpon>ConsultaServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirCliente.resx">
+      <DependentUpon>ExcluirCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirFornecedor.resx">
+      <DependentUpon>ExcluirFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirFuncionario.resx">
+      <DependentUpon>ExcluirFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirProduto.resx">
+      <DependentUpon>ExcluirProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirServico.resx">
+      <DependentUpon>ExcluirServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidoProduto.resx">
+      <DependentUpon>PedidoProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidoServico.resx">
+      <DependentUpon>PedidoServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaGerente2.resx">
+      <DependentUpon>TelaGerente2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaInicial.resx">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TelaGerente1.resx">
+      <DependentUpon>TelaGerente1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BdChaveiro.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BdChaveiro_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>BdChaveiro.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
